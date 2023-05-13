@@ -16,7 +16,7 @@
   <meta property="og:title" content="PR Explainer Bot — your new AI helper in Github">
   <meta property="og:description"
     content="PR Explainer Bot analyzes pull requests in GitHub and delivers concise, AI-powered explanations to improve code reviews.">
-  <meta property="og:image" content="https://pr-explainer-bot.web.app/images/preview.png">
+  <meta property="og:image" content="https://pr-explainer-bot.web.app/images/preview2.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
   <meta property="twitter:title" content="PR Explainer Bot — your new AI helper in Github">
   <meta property="twitter:description"
     content="PR Explainer Bot analyzes pull requests in GitHub and delivers concise, AI-powered explanations to improve code reviews.">
-  <meta property="twitter:image" content="https://pr-explainer-bot.web.app/images/preview.png">
+  <meta property="twitter:image" content="https://pr-explainer-bot.web.app/images/preview2.png">
   <link rel="icon"
     href="https://avatars.githubusercontent.com/in/323714?s=120&u=e11dbd6d44e7915537eed281ef96f39c6381db9d&v=4"
     type="image/png">
@@ -132,7 +132,41 @@
                 document.getElementById('readme').innerHTML = marked.parse(text);
               })
             </script>
+          </article>
+        </div>
+      </article>
 
+      <article class="timeline-comment">
+        <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
+          <img alt="@pr-explainer-bot" height="44" width="44"
+            src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
+        </a>
+        <div class="comment">
+          <header class="comment-header">
+            <span class="comment-meta">
+              <a class="text-link" href="https://github.com/utterance">
+                <strong>PR Explainer Bot</strong>
+              </a>
+              <span
+                class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
+            </span>
+          </header>
+          <article class="markdown-body" md>
+            <div id="screenshots">
+              <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
+                <div class="flex items-center w-full space-x-2">
+                  <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                </div>
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+            <script>
+              fetch('./Screenshots.md').then(res => res.text()).then(text => {
+              document.getElementById('screenshots').innerHTML = marked.parse(text);
+              })
+            </script>
           </article>
         </div>
       </article>
