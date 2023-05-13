@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary Meta Tags -->
+  <title>PR Explainer Bot — your new AI helper in Github</title>
+  <meta name="title" content="PR Explainer Bot — your new AI helper in Github">
+  <meta name="description"
+    content="PR Explainer Bot analyzes pull requests in GitHub and delivers concise, AI-powered explanations to improve code reviews.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pr-explainer-bot.web.app/">
+  <meta property="og:title" content="PR Explainer Bot — your new AI helper in Github">
+  <meta property="og:description"
+    content="PR Explainer Bot analyzes pull requests in GitHub and delivers concise, AI-powered explanations to improve code reviews.">
+  <meta property="og:image" content="https://pr-explainer-bot.web.app/images/preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pr-explainer-bot.web.app/">
+  <meta property="twitter:title" content="PR Explainer Bot — your new AI helper in Github">
+  <meta property="twitter:description"
+    content="PR Explainer Bot analyzes pull requests in GitHub and delivers concise, AI-powered explanations to improve code reviews.">
+  <meta property="twitter:image" content="https://pr-explainer-bot.web.app/images/preview.png">
+  <link rel="icon"
+    href="https://avatars.githubusercontent.com/in/323714?s=120&u=e11dbd6d44e7915537eed281ef96f39c6381db9d&v=4"
+    type="image/png">
+
+  <link id="theme-stylesheet" rel="stylesheet" href="https://utteranc.es/stylesheets/themes/github-light/index.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- revert tailwind styles for marked -->
+  <style>
+    ol {
+      list-style: decimal !important;
+    }
+
+    ul {
+      list-style: disc !important;
+    }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZZ8N0DCWY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CZZ8N0DCWY');
+  </script>
+</head>
+
+<body class="grid place-items-center w-full p-4 bg-gray-100">
+  <div class="max-w-2xl timeline">
+    <section id="header" class="w-full rounded shadow bg-white p-4 flex gap-2">
+
+      <img class="rounded flex w-28 h-28 md:w-40 md:h-40 aspect-square" data-qa="app_header_icon" src="images/icon.png">
+
+      <div class="flex flex-col w-full justify-around">
+        <h1 class="text-xl text-center">PR Explainer Bot</h1>
+        <p class="text-gray-500 text-center">Your new AI coworker in Github<br />
+          <span class="hidden md:block">
+            It will explain to you changes in Pull Requests
+          </span>
+        </p>
+        <div class="flex flex-col w-full items-center p-2 lg:p-4">
+          <button id="slack-button" href="https://github.com/apps/pr-explainer-bot"
+            style="font-family:Lato, sans-serif;"
+            class="text-center text-white bg-[#21262d] rounded flex text-lg font-bold w-full max-w-[276px] justify-center p-2">
+            Install on GitHub</button>
+        </div>
+      </div>
+    </section>
+
+
+      <article class="timeline-comment">
+        <a class="avatar" href="https://github.com/kirill-dev-pro" target="_blank" tabindex="-1">
+          <img alt="@kirill-dev-pro" height="44" width="44"
+            src="https://avatars.githubusercontent.com/u/8945959?v=4?v=3&s=88">
+        </a>
+        <div class="comment">
+          <header class="comment-header">
+            <span class="comment-meta">
+              <a class="text-link" href="https://github.com/kirill-dev-pro"
+                target="_blank"><strong>kirill-dev-pro</strong></a>
+            </span>
+            <div class="comment-actions">
+              <span class="author-association-badge">Member</span>
+            </div>
+          </header>
+          <div class="markdown-body markdown-body-scrollable">
+            <p dir="auto">Hello, I introduce to you PR-explainer-bot. A GPT powered AI that analyses your Pull requests
+              on github
+              and save you time</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="timeline-comment">
+        <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
+          <img alt="@pr-explainer-bot" height="44" width="44"
+            src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
+        </a>
+        <div class="comment">
+          <header class="comment-header">
+            <span class="comment-meta">
+              <a class="text-link" href="https://github.com/utterance">
+                <strong>PR Explainer Bot</strong>
+              </a>
+              <span
+                class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
+            </span>
+          </header>
+          <article class="markdown-body" md>
+            <div id="readme">
+              <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
+                <div class="flex items-center w-full space-x-2">
+                  <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                </div>
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+            <script>
+              fetch('./Instructions.md').then(res => res.text()).then(text => {
+                document.getElementById('readme').innerHTML = marked.parse(text);
+              })
+            </script>
+
+          </article>
+        </div>
+      </article>
+
+      <article class="timeline-comment">
+        <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
+          <img alt="@pr-explainer-bot" height="44" width="44"
+            src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
+        </a>
+        <div class="comment">
+          <header class="comment-header">
+            <span class="comment-meta">
+              <a class="text-link" href="https://github.com/utterance">
+                <strong>PR Explainer Bot</strong>
+              </a>
+              <span
+                class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
+            </span>
+          </header>
+          <article class="markdown-body" md id="faq">
+            <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
+              <div class="flex items-center w-full space-x-2">
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+              </div>
+              <span class="sr-only">Loading...</span>
+            </div>
+          </article>
+          <script>
+            fetch('./FAQ.md').then(res => res.text()).then(text => {
+              document.getElementById('faq').innerHTML = marked.parse(text);
+            })
+          </script>
+        </div>
+      </article>
+
+      <script src="https://utteranc.es/client.js" repo="PR-explainer-bot/web-site" issue-term="homepage"
+        crossorigin="anonymous" theme="github-light" async></script>
+
+
+    <div>
+      <p class="text-center">Made with ❤️ by <a href="https://github.com/kirill-dev-pro"
+          class="text-blue-500">Kirill</a>
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>
