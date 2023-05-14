@@ -69,124 +69,53 @@
           </span>
         </p>
         <div class="flex flex-col w-full items-center p-2 lg:p-4">
-          <button id="slack-button" href="https://github.com/apps/pr-explainer-bot"
-            style="font-family:Lato, sans-serif;"
-            class="text-center text-white bg-[#21262d] rounded flex text-lg font-bold w-full max-w-[276px] justify-center p-2">
-            Install on GitHub</button>
+          <a id="slack-button" href="https://github.com/apps/pr-explainer-bot" style="font-family:Lato, sans-serif;"
+            class="text-center text-white bg-[#21262d] rounded flex text-lg font-bold w-full max-w-[276px] justify-center p-2 cursor-pointer">
+            Install on GitHub</a>
         </div>
       </div>
     </section>
 
 
-      <article class="timeline-comment">
-        <a class="avatar" href="https://github.com/kirill-dev-pro" target="_blank" tabindex="-1">
-          <img alt="@kirill-dev-pro" height="44" width="44"
-            src="https://avatars.githubusercontent.com/u/8945959?v=4?v=3&s=88">
-        </a>
-        <div class="comment">
-          <header class="comment-header">
-            <span class="comment-meta">
-              <a class="text-link" href="https://github.com/kirill-dev-pro"
-                target="_blank"><strong>kirill-dev-pro</strong></a>
-            </span>
-            <div class="comment-actions">
-              <span class="author-association-badge">Member</span>
-            </div>
-          </header>
-          <div class="markdown-body markdown-body-scrollable">
-            <p dir="auto">Hello, I introduce to you PR-explainer-bot. A GPT powered AI that analyses your Pull requests
-              on github
-              and save you time</p>
+    <article class="timeline-comment">
+      <a class="avatar" href="https://github.com/kirill-dev-pro" target="_blank" tabindex="-1">
+        <img alt="@kirill-dev-pro" height="44" width="44"
+          src="https://avatars.githubusercontent.com/u/8945959?v=4?v=3&s=88">
+      </a>
+      <div class="comment">
+        <header class="comment-header">
+          <span class="comment-meta">
+            <a class="text-link" href="https://github.com/kirill-dev-pro"
+              target="_blank"><strong>kirill-dev-pro</strong></a>
+          </span>
+          <div class="comment-actions">
+            <span class="author-association-badge">Member</span>
           </div>
+        </header>
+        <div class="markdown-body markdown-body-scrollable">
+          <p dir="auto">Hello, I introduce to you PR-explainer-bot. A GPT powered AI that analyses your Pull requests
+            on github
+            and save you time</p>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="timeline-comment">
-        <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
-          <img alt="@pr-explainer-bot" height="44" width="44"
-            src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
-        </a>
-        <div class="comment">
-          <header class="comment-header">
-            <span class="comment-meta">
-              <a class="text-link" href="https://github.com/utterance">
-                <strong>PR Explainer Bot</strong>
-              </a>
-              <span
-                class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
-            </span>
-          </header>
-          <article class="markdown-body" md>
-            <div id="readme">
-              <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
-                <div class="flex items-center w-full space-x-2">
-                  <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
-                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-                </div>
-                <span class="sr-only">Loading...</span>
-              </div>
-            </div>
-            <script>
-              fetch('./Instructions.md').then(res => res.text()).then(text => {
-                document.getElementById('readme').innerHTML = marked.parse(text);
-              })
-            </script>
-          </article>
-        </div>
-      </article>
-
-      <article class="timeline-comment">
-        <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
-          <img alt="@pr-explainer-bot" height="44" width="44"
-            src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
-        </a>
-        <div class="comment">
-          <header class="comment-header">
-            <span class="comment-meta">
-              <a class="text-link" href="https://github.com/utterance">
-                <strong>PR Explainer Bot</strong>
-              </a>
-              <span
-                class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
-            </span>
-          </header>
-          <article class="markdown-body" md>
-            <div id="screenshots">
-              <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
-                <div class="flex items-center w-full space-x-2">
-                  <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
-                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
-                  <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
-                </div>
-                <span class="sr-only">Loading...</span>
-              </div>
-            </div>
-            <script>
-              fetch('./Screenshots.md').then(res => res.text()).then(text => {
-              document.getElementById('screenshots').innerHTML = marked.parse(text);
-              })
-            </script>
-          </article>
-        </div>
-      </article>
-
-      <article class="timeline-comment">
-        <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
-          <img alt="@pr-explainer-bot" height="44" width="44"
-            src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
-        </a>
-        <div class="comment">
-          <header class="comment-header">
-            <span class="comment-meta">
-              <a class="text-link" href="https://github.com/utterance">
-                <strong>PR Explainer Bot</strong>
-              </a>
-              <span
-                class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
-            </span>
-          </header>
-          <article class="markdown-body" md id="faq">
+    <article class="timeline-comment">
+      <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
+        <img alt="@pr-explainer-bot" height="44" width="44"
+          src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
+      </a>
+      <div class="comment">
+        <header class="comment-header">
+          <span class="comment-meta">
+            <a class="text-link" href="https://github.com/utterance">
+              <strong>PR Explainer Bot</strong>
+            </a>
+            <span class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
+          </span>
+        </header>
+        <article class="markdown-body" md>
+          <div id="readme">
             <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
               <div class="flex items-center w-full space-x-2">
                 <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
@@ -195,17 +124,84 @@
               </div>
               <span class="sr-only">Loading...</span>
             </div>
-          </article>
+          </div>
           <script>
-            fetch('./FAQ.md').then(res => res.text()).then(text => {
-              document.getElementById('faq').innerHTML = marked.parse(text);
+            fetch('./Instructions.md').then(res => res.text()).then(text => {
+              document.getElementById('readme').innerHTML = marked.parse(text);
             })
           </script>
-        </div>
-      </article>
+        </article>
+      </div>
+    </article>
 
-      <script src="https://utteranc.es/client.js" repo="PR-explainer-bot/web-site" issue-term="homepage"
-        crossorigin="anonymous" theme="github-light" async></script>
+    <article class="timeline-comment">
+      <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
+        <img alt="@pr-explainer-bot" height="44" width="44"
+          src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
+      </a>
+      <div class="comment">
+        <header class="comment-header">
+          <span class="comment-meta">
+            <a class="text-link" href="https://github.com/utterance">
+              <strong>PR Explainer Bot</strong>
+            </a>
+            <span class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
+          </span>
+        </header>
+        <article class="markdown-body" md>
+          <div id="screenshots">
+            <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
+              <div class="flex items-center w-full space-x-2">
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+              </div>
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <script>
+            fetch('./Screenshots.md').then(res => res.text()).then(text => {
+              document.getElementById('screenshots').innerHTML = marked.parse(text);
+            })
+          </script>
+        </article>
+      </div>
+    </article>
+
+    <article class="timeline-comment">
+      <a class="avatar" href="https://github.com/apps/pr-explainer-bot" tabindex="-1">
+        <img alt="@pr-explainer-bot" height="44" width="44"
+          src="https://avatars.githubusercontent.com/in/323714?s=80&v=4" />
+      </a>
+      <div class="comment">
+        <header class="comment-header">
+          <span class="comment-meta">
+            <a class="text-link" href="https://github.com/utterance">
+              <strong>PR Explainer Bot</strong>
+            </a>
+            <span class="text-sm font-semibold px-[7px] border border-[#d0d7de] rounded-full text-[#656d76]">bot</span>
+          </span>
+        </header>
+        <article class="markdown-body" md id="faq">
+          <div role="status" class="space-y-2.5 animate-pulse max-w-lg">
+            <div class="flex items-center w-full space-x-2">
+              <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+              <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+            </div>
+            <span class="sr-only">Loading...</span>
+          </div>
+        </article>
+        <script>
+          fetch('./FAQ.md').then(res => res.text()).then(text => {
+            document.getElementById('faq').innerHTML = marked.parse(text);
+          })
+        </script>
+      </div>
+    </article>
+
+    <script src="https://utteranc.es/client.js" repo="PR-explainer-bot/web-site" issue-term="homepage"
+      crossorigin="anonymous" theme="github-light" async></script>
 
 
     <div>
