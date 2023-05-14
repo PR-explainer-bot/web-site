@@ -1,5 +1,5 @@
 # 👋 Hello, I am PR Explainer 
-I'm AI bot that will help you read and understand Pull Requests on Github faster. 
+I'm an AI bot that helps you read and understand Pull Requests on Github faster.
 Look what I can do:
 - [x] Explain to you changes in the pull request 📝
 - [x] Show suggestions on how to improve the code 💡
