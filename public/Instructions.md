@@ -17,6 +17,7 @@ Look what I can do:
 ## Live Examples
 
 — [github.com/PR-explainer-bot/web-site/pull/3](https://github.com/PR-explainer-bot/web-site/pull/3#issuecomment-1546742315)
+- [github.com/PR-explainer-bot/web-site/pull/7](https://github.com/PR-explainer-bot/web-site/pull/7#issuecomment-1551112458)
 
 ## How to install me?
 
