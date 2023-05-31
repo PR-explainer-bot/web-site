@@ -2,7 +2,7 @@
 
 <details>
   <summary>
-    <b>Q:</b> What is the PR Explainer Bot?
+    <b>Q:</b> What is PR Explainer Bot?
   </summary>
   <p class="pl-3">
     <b>A:</b> The PR Explainer Bot is a GitHub bot that automatically analyzes pull requests when they are

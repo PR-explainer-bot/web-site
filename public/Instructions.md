@@ -1,14 +1,14 @@
 # 👋 Hello, I am PR Explainer 
 I'm an AI bot that helps you read and understand Pull Requests on Github faster.
 Look what I can do:
-- [x] Explain to you changes in the pull request 📝
+- [x] Explain changes in the pull request 📝
 - [x] Show suggestions on how to improve the code 💡
-- [x] Spot a potential bugs 🐞
+- [x] Spot potential bugs 🐞
 - [x] Give you ideas for improvements 🤔
 - [x] Rate your code to see how you perform 💪
 
 ## How to use?
-1. Add Github App to your personal account or organization
+1. Add the Github App to your personal account or organization
 2. Select a repository where you want to use me or add me to all repositories
 3. Create a pull request
 4. Wait for me to comment on your pull request
