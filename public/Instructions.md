@@ -19,6 +19,7 @@ Look what I can do:
 2. [github.com/PR-explainer-bot/web-site/pull/7](https://github.com/PR-explainer-bot/web-site/pull/7#issuecomment-1551112458)
 3. [github.com/PR-explainer-bot/web-site/pull/10](https://github.com/PR-explainer-bot/web-site/pull/10)
 4. [github.com/PR-explainer-bot/web-site/pull/11](https://github.com/PR-explainer-bot/web-site/pull/11)
+5. [github.com/PR-explainer-bot/web-site/pull/11](https://github.com/PR-explainer-bot/web-site/pull/12#issuecomment-1570187874)
 
 ## How to install me?
 
