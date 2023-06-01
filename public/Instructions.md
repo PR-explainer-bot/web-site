@@ -1,14 +1,14 @@
 # 👋 Hello, I am PR Explainer 
 I'm an AI bot that helps you read and understand Pull Requests on Github faster.
 Look what I can do:
-- [x] Explain to you changes in the pull request 📝
+- [x] Explain changes in the pull request 📝
 - [x] Show suggestions on how to improve the code 💡
-- [x] Spot a potential bugs 🐞
+- [x] Spot potential bugs 🐞
 - [x] Give you ideas for improvements 🤔
 - [x] Rate your code to see how you perform 💪
 
 ## How to use?
-1. Add Github App to your personal account or organization
+1. Add the Github App to your personal account or organization
 2. Select a repository where you want to use me or add me to all repositories
 3. Create a pull request
 4. Wait for me to comment on your pull request
@@ -18,6 +18,8 @@ Look what I can do:
 1. [github.com/PR-explainer-bot/web-site/pull/3](https://github.com/PR-explainer-bot/web-site/pull/3#issuecomment-1546742315)
 2. [github.com/PR-explainer-bot/web-site/pull/7](https://github.com/PR-explainer-bot/web-site/pull/7#issuecomment-1551112458)
 3. [github.com/PR-explainer-bot/web-site/pull/10](https://github.com/PR-explainer-bot/web-site/pull/10)
+4. [github.com/PR-explainer-bot/web-site/pull/11](https://github.com/PR-explainer-bot/web-site/pull/11)
+5. [github.com/PR-explainer-bot/web-site/pull/11](https://github.com/PR-explainer-bot/web-site/pull/12#issuecomment-1570187874)
 
 ## How to install me?
 
